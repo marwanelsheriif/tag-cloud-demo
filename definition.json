@@ -5,15 +5,15 @@
   "settings": [
     {
       "name": {
-        "key": "group"
+        "key": "page size"
       },
       "settings": [
         {
           "name": {
-            "key": "setting"
+            "key": "page size"
           },
-          "key": "key1",
-          "type": "boolean"
+          "key": "pages",
+          "type": "page-size"
         }
       ]
     }
@@ -22,10 +22,64 @@
     {
       "key": "tray-key",
       "name": {
-        "key": "tray"
+        "key": "text column"
       },
       "queryRole": "measure",
-      "minCount": 1
+      "minCount": 1,
+      "settings": [
+        {
+          "name": "Font Family",
+          "settings": [
+            {
+              "key": "fontFamily",
+              "name": "Font Family",
+              "type": "dropdown",
+              "options": [
+                {
+                  "key": "Arial",
+                  "label": "Arial"
+                },
+                {
+                  "key": "Lato",
+                  "label": "Lato"
+                },
+                {
+                  "key": "Roboto",
+                  "label": "Roboto"
+                },
+                {
+                  "key": "Sans",
+                  "label": "Sans"
+                },
+                {
+                  "key": "Yellowtail",
+                  "label": "Yellowtail"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Max Tags Number",
+          "settings": [
+            {
+              "key": "tagsMaxNum",
+              "name": "Max Tags Number",
+              "type": "number"
+            }
+          ]
+        },
+        {
+          "name": "single color",
+          "settings": [
+            {
+              "key": "singleColor",
+              "name": "single color",
+              "type": "color"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
